@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: Hacked;
+}
+
+mark {
+    background-color: white;
+}
+
+.mark1 {
+    background-color: #dfe6e9;
+}
+
+.mark2 {
+    background-color: #636e72;
+}
+
+.mark3 {
+    background-color: #2d3436;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    width: auto;
+    font-family: Hacked;
+}

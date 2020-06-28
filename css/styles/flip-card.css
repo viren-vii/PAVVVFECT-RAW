@@ -1,0 +1,79 @@
+        .card-deck
+        {
+            margin: auto;
+        }
+        
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+        .card
+        {
+            color: aliceblue;
+            width: 250px;
+            height: 200px;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            margin-top: 50px;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner
+        {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .card:hover .flip-card-inner
+        {
+            transform: rotateY(180deg);
+            color: aliceblue;
+        }
+
+        /* Position the front and back side */
+        .flip-card-front, .flip-card-back
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front
+        {
+            background-color: #bbb;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Style the back side */
+        .flip-card-back
+        {
+            background-color: white;
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 5px;
+        }
+        .card-deck
+        {
+            margin: 0;
+        }
+        @media (max-width: 426px)
+        { 
+            h1
+            {
+                font-size: 40px;
+                text-align: center;
+            }
+            .card
+            {
+                margin: auto;
+                margin-top: 20px;
+            }
+        
+        
+        }
